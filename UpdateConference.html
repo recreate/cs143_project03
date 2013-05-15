@@ -1,0 +1,31 @@
+<html>
+<head><title>Update Conference</title></head>
+<body>
+<h3>Update Conference</h3>
+<form method=get action=servlet/CMT>
+	Conference name:<input type=text name=c_name size=40 maxlength=100> <br>
+	Start time (MM-DD-YYYY-HH-mm): 
+		Month<input type=text name=s_month size=2 maxlength=2>
+		Day<input type=text name=s_day size=2 maxlength=2>
+		Year<input type=text name=s_year size=4 maxlength=4>
+		Hour<input type=text name=s_hour size=2 maxlength=2>
+		Minute<input type=text name=s_minute size=2 maxlength=2>
+<br>
+	End time (MM-DD-YYYY-HH-mm):
+		Month<input type=text name=e_month size=2 maxlength=2>
+		Day<input type=text name=e_day size=2 maxlength=2>
+		Year<input type=text name=e_year size=4 maxlength=4>
+		Hour<input type=text name=e_hour size=2 maxlength=2>
+		Minute<input type=text name=e_minute size=2 maxlength=2>
+<br>
+	Required number of reviewers:<input type=text name=num_reviewers size=5 maxlength=5><br>
+	Maximum papers per reviewer:<input type=text name=max_papers size=5 maxlength=5><br>
+	<input type=hidden name=opid value=9>
+	<input type=submit value=suubmit><br><br>
+
+</form>
+
+<a href='./CMT.html'>Back to CMT</a>
+
+</body>
+</html>

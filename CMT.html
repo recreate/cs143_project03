@@ -1,0 +1,33 @@
+<html>
+<head><title>CMT homepage</title><head>
+<body>
+<h4>Users</h4>
+<a href='./Users.html'>View/Modify user information</a>
+<br>
+<a href='./CreatePaper.html'>Create papers</a>
+<br>
+<a href='./Paper.html'>View/Modify/Submit papers</a>
+<br>
+<h4>Reviews</h4>
+<form method=get action=servlet/CMT>
+	<input type=hidden name=opid value=16>
+	<input type=submit value='Review Assigned Papers'>
+</form>
+<br>
+<h4>Conferences</h4>
+<a href='./CreateConference.html'>Create a conference</a>
+<form method=get action=servlet/CMT>
+	<input type=hidden name=opid value=8>
+	<input type=submit value='View/Modify a Conference'>
+</form>
+<br>
+<br>
+<br>
+<form method=get action=servlet/CMT>
+	<input type=hidden name=opid value=999>
+	<input type=submit value=Logout>
+</form>
+<br>
+</body>
+</html>
+
